@@ -1,0 +1,18 @@
+.input-search {
+	position: relative;
+	
+	span {
+		position: absolute;
+		left: 0;
+	}
+}
+
+.input-group input.form-control {
+	height: 31px;
+	border-right: none;
+	border-radius: 2px;
+}
+
+.input-group-btn:last-child > .btn {
+	margin-left: 0;
+}

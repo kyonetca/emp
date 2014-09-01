@@ -1,0 +1,38 @@
+#nav-column {
+	@extend .col-xs-3;
+	border-right: 1px solid transparentize(#fafafa, 0.8);
+	padding: 0;
+	background-color: #333;
+	height: 500px;
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	li a {
+		font-size: 12px;
+		display: block;
+		color: #ddd;
+		padding: 7.5px;
+		margin: 7.5px;
+		border-radius: 2px;
+		// border-bottom: 1px solid #eee;
+		// border-right: 1px solid #eee;
+
+		&:hover {
+			text-decoration: none;
+			background-color: transparentize(#ccc, 0.92);
+		}
+	}
+
+	li.active a {
+		color: #fff;
+		font-weight: bold;
+		border: 1px solid transparentize(#4070ff, 0.5);
+
+		&:hover {
+			background-color: transparentize(#ccc, 0.92);
+		}
+	}
+}

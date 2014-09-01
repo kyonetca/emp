@@ -1,0 +1,49 @@
+.compose-window {
+	width: 500px;
+	position: fixed;
+	bottom: 0px;
+	right: 10px;
+	background-color: #fff;
+	z-index: 100;
+	border: 1px solid #eee;
+}
+
+.compose-head {
+	// @extend .compose-bar;
+	background-color: #7fa7d1;
+}
+
+.compose-foot {
+	// @extend .compose-bar;
+}
+
+.compose-content {
+	border-bottom: 1px solid #eee;
+	min-height: 250px;
+	padding: 8px;
+}
+
+.compose-bar {
+	padding: 8px 0;
+	border-bottom: 1px solid #eee;
+	margin: 0;
+}
+
+.compose-bar-input {
+	border: 0;
+	float: left;
+}
+
+.compose-bar-label {
+	@extend .col-xs-4;
+	display: inline-block;
+	text-align: right;
+}
+
+.compose-bar-content {
+	@extend .col-xs-20;
+
+	.msg-address-list {
+		float: left;
+	}
+}

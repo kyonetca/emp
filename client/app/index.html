@@ -1,0 +1,1070 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.) styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="empAngularApp">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-xs-24">
+                <div id="logo-main">
+                <img src="images/yeoman.png">
+            </div>
+            <a id="logout" class="btn" href="#0"><span class="glyphicon-off"></span> Logout</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="action-menu containter-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <button type="button" id="btn-compose" class="btn btn-pop"><span class="glyphicon-plus"></span> Compose</button>
+            </div>
+            <div class="col-xs-9">
+                <div class="btn-group">
+                    <button type="button" class="btn">
+                        <input type="checkbox"> All</button>
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#0">All</a></li>
+                        <li><a href="#0">Read</a></li>
+                        <li><a href="#0">Unread</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#0">Mark as spam</a></li>
+                        <li><a href="#0">Mark as read</a></li>
+                        <li><a href="#0">Mark as unread</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn"><span class="glyphicon-trash"><span></button>
+            </div>
+            <div class="col-xs-8">
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-pop dropdown-toggle" data-toggle="dropdown"><span class="glyphicon-search"> </span> <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#0">From</a></li>
+                          <li><a href="#0">To</a></li>
+                          <li><a href="#0">Subject</a></li>
+                          <li><a href="#0">Body</a></li>
+                          <li><a href="#0xw">Date</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 text-right" style="top: 4.5px;">
+                <span>1-20 of 20</span>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-xs"><span class="glyphicon-chevron-left"></span></button>
+                    <button type="button" class="btn btn-xs"><span class="glyphicon-chevron-right"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-content" class="container-fluid">
+        <div class="row">
+            <nav id="nav-column">
+                <ul>
+                    <li class="active"><a href="#0">Inbox <span class="badge pull-right">3</span></a></li>
+                    <li><a href="#0">Sent</a></li>
+                    <li><a href="#0">Drafts</a></li>
+                    <li><a href="#0">Outbox</a></li>
+                    <li><a href="#0">Publications</a></li>
+                    <li><a href="#0">Addresses</a></li>
+                    <li><a href="#0">Contacts</a></li>
+                    <li><a href="#0">Settings <span class="glyphicon-cog pull-right"></span></a></li>
+                </ul>
+            </nav>
+
+            <div id="msg-column">
+                <div class="msg-card msg-new">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                            <div class="label-info-sign pull-right">
+                                <div class="glyphicon-info-sign"></div>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card msg-new">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card msg-new">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                <div class="msg-card">
+                    <div class="msg-card-head">
+                        <div class="msg-indicator">
+                        </div>
+                        <div class="msg-card--row">
+                            <input type="checkbox">
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="glyphicon-info-sign"></div>
+                        </div>
+                    </div> <!-- END msg-card-head -->
+                    <div class="msg-card-content">
+                        <div class="msg-card--row"> 
+                            <div class="label-address">
+                                <div>EMP-78a7shal</div>
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div>    
+                            <div class="label-date pull-right">
+                                <span>10:24 pm</span>
+                            </div>
+                        </div>
+                        <div class="msg-card--row">
+                            <div class="label-subject">
+                                Why EMP will dominate the world
+                            </div>
+                            <div class="label-thread-count pull-right">
+                                (4)
+                            </div>
+                        </div>
+                        
+                    </div> <!-- END msg-card-content -->
+                </div> <!-- END msg-card -->
+
+                
+            </div>
+
+            <div id="thread-column">
+                <div class="msg-item container-fluid">
+                    <div class="msg-item--row row"> 
+                        <div class="label-address">
+                            <span>EMP-78a7shal</span>
+                            <!-- Single button -->
+                            <div class="btn-group">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-xs"><span class="glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn btn-xs"><span class="glyphicon-share-alt"></span></button>
+                                <button type="button" class="btn btn-xs dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#0">Action</a></li>
+                                    <li><a href="#0">Action 2</a></li>
+                                    <li><a href="#0">Action 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg-item--row row">
+                        <span>To: </span>
+                        <div class="label-address">
+                            <span>Me (EMP-78a7ij4a)</span>  
+                        </div>
+                        <div class="pull-right">
+                            <div class="label-sent">
+                                <span><span class="glyphicon-send"></span> Sent: Aug 15</span>
+                                
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Full date</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="msg-item--row row">
+                        <span>The subject of this message</span> 
+                        <div class="pull-right">
+                            <div class="label-sent">
+                                <span><span class="glyphicon-eye-open"></span> Opened: Aug 15</span>
+                                
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Full date</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <hr/>
+                    
+                    <!-- Message content -->
+                    <div>
+                        <p>Hey everyone,</p>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, eum tacimates omittantur ad, an eos corpora maluisset disputationi. Eos ad exerci iracundia, lorem commodo fastidii qui eu, cum an sint dicta. Facer appetere accusata ne his. Vix nemore malorum id. Albucius luptatum argumentum qui ea, erant simul partiendo sed in.</p>
+                        <p>Detracto interpretaris cum ut, errem graecis has an. At hinc adipiscing incorrupte sit. Vel ei justo tollit consetetur, an illum aperiri vis. Dicant expetenda ei has, minim forensibus te vel, an graeci viderer explicari vis. Qui in fabulas facilisis. Essent audire fuisset no eam, eum sonet essent iuvaret ea, id eos mollis docendi.</p>
+                        <br/>
+                        <p>Thanks,</p>
+                        <p>Arjun Sarode</p>
+                    </div>
+                    
+                    <hr/>
+
+                    <div class="label-attachment">
+                        <div><span class="glyphicon-paperclip"></span> EMP.dmg <button type="button" class="btn"><span class="glyphicon-download"></span></button></div>
+                    </div>
+                    <div class="label-attachment">
+                        <div><span class="glyphicon-paperclip"></span> EMP.dmg <button type="button" class="btn"><span class="glyphicon-download"></span></button></div>
+                    </div>
+
+                </div>
+
+                <div class="msg-item container-fluid">
+                    <div class="row"> 
+                        <div class="label-address">
+                            <span>EMP-78a7shal</span>
+                            <!-- Single button -->
+                            <div class="btn-group">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <div class="pull-right">
+                            <div class="btn-group">
+                                <button type="button" class="btn"><span class="glyphicon-info-sign"></span></button>
+                                <button type="button" class="btn"><span class="glyphicon-share-alt"></span></button>
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#0">Action</a></li>
+                                    <li><a href="#0">Action 2</a></li>
+                                    <li><a href="#0">Action 3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span>To: </span>
+                        <div class="label-address">
+                            <span>Me (EMP-78a7ij4a)</span>  
+                        </div>
+                        <div class="pull-right">
+                            <div class="label-sent">
+                                <span><span class="glyphicon-send"></span> Sent: Aug 15</span>
+                                
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Full date</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="row">
+                        <span>The subject of this message</span> 
+                        <div class="pull-right">
+                            <div class="label-sent">
+                                <span><span class="glyphicon-eye-open"></span> Opened: Aug 15</span>
+                                
+                                <div class="btn-group">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span class="caret"></span>
+                                    </div>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Full date</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+
+                    <hr/>
+                    
+                    <!-- Message content -->
+                    <div>
+                        <p>Hey everyone,</p>
+                        <br/>
+                        <p>Lorem ipsum dolor sit amet, eum tacimates omittantur ad, an eos corpora maluisset disputationi. Eos ad exerci iracundia, lorem commodo fastidii qui eu, cum an sint dicta. Facer appetere accusata ne his. Vix nemore malorum id. Albucius luptatum argumentum qui ea, erant simul partiendo sed in.</p>
+                        <p>Detracto interpretaris cum ut, errem graecis has an. At hinc adipiscing incorrupte sit. Vel ei justo tollit consetetur, an illum aperiri vis. Dicant expetenda ei has, minim forensibus te vel, an graeci viderer explicari vis. Qui in fabulas facilisis. Essent audire fuisset no eam, eum sonet essent iuvaret ea, id eos mollis docendi.</p>
+                        <br/>
+                        <p>Thanks,</p>
+                        <p>Arjun Sarode</p>
+                    </div>
+                    
+                    <hr/>
+
+                    <div class="label-attachment">
+                        <div><span class="glyphicon-paperclip"></span> EMP.dmg <button type="button" class="btn"><span class="glyphicon-download"></span></button></div>
+                    </div>
+                    <div class="label-attachment">
+                        <div><span class="glyphicon-paperclip"></span> EMP.dmg <button type="button" class="btn"><span class="glyphicon-download"></span></button></div>
+                    </div>
+
+                </div>
+            </div>
+
+
+           
+        </div>
+    </div> <!-- END main-content -->
+
+    <div class="compose-window hide">
+        <div class="compose-head"> 
+            <span>
+                Compose
+                <div class="btn-group">
+                    <div class="btn-skinned dropdown-toggle" data-toggle="dropdown"> message<span class="caret"></span></div>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Message</a></li>
+                        <li><a href="#">Publication</a></li>
+                    </ul>
+                </div>
+            </span>
+            <div class="pull-right">
+                <span class="glyphicon-minus"><span>
+                <span class="glyphicon-resize-full"></span>
+                <span class="glyphicon-remove"></span>
+            </div>
+        </div>
+        <div class="compose-bar row">
+            <div class="compose-bar-label">
+                <button type="button" class="btn"><span class="glyphicon-book"></span> To:</button>
+            </div>
+            
+            <div class="compose-bar-content">
+                <ul class="msg-address-list">
+                    <li><div class="label-address"><span>Josh Metnick <span class="glyphicon-remove"></span></span></div></li>
+                    <!-- <li><div class="label-address"><span>EMP-78a7ij4a <span class="glyphicon-remove"></span></span></div></li> -->
+                    <!-- <li><div class="label-address"><span>EMP-78a7ij4a <span class="glyphicon-remove"></span></span></div></li> -->
+                </ul>
+                <input class="compose-bar-input" type="text">
+            </div>
+            
+        </div>
+        <div class="compose-bar">
+            <div class="compose-bar-label">
+                From:
+            </div>
+            <div class="btn-group">
+                <div class="label-address btn-skinned dropdown-toggle" data-toggle="dropdown"><span>EMP-78a7ij4a <span class="caret"></span></span></div>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#0">EMP-78a7ij4a</a></li>
+                    <li><a href="#0">EMP-44kk4aso</a></li>
+                </ul>
+
+            </div>
+            
+        </div>
+        <div class="compose-bar">
+            <div class="compose-bar-label">
+                Subject:
+            </div>
+            <span>This is the subject of the message<span>
+        </div>
+        <div class="compose-content">
+            <p>Hello everyone,</p>
+            <p>Lorem ipsum dolor sit amet, partem vocent mei id, alia brute verear has ne. Eu homero similique accommodare ius, eu sonet cetero eripuit qui. Ei iuvaret denique eos, has eu oratio ubique electram. Pri erat populo dolorum no, te mundi accusamus sit, ea malorum feugiat pri.</p>
+            <br/>
+            <p>Cheers,</p>
+            <p>Ethan Gordon</p>
+        </div>
+        <div class="compose-foot">
+            <div class="btn-group">
+                <button type="button" class="btn"><span class="glyphicon-font"></span></button>
+                <button type="button" class="btn"><span class="glyphicon-paperclip"></span></button>
+                <button type="button" class="btn"><span class="glyphicon-link"></span></button>
+            </div>
+            
+            <button type="button" class="btn pull-right"><span class="glyphicon-send"></span> Send</button>
+            <button type="button" class="btn pull-right"><span class="glyphicon-trash"></span></button>
+        </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXXX-X');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/button.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+    <!-- endbuild -->
+    </body>
+</html>

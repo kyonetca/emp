@@ -1,0 +1,125 @@
+.msg-card {
+	position: relative;
+	border-bottom: 1px solid transparentize(#ccc, 0.8);
+	background-color: #fff;
+	// background-color: #fffcf4;
+
+
+	&:hover {
+		// background-color: transparentize(#fff99e, 0.75);
+		background-color: transparentize(#4070ff, 0.0);
+		color: white;
+
+		.label-address {
+			color: #333;
+		}
+
+		.msg-card-head {
+
+		}
+		
+		// .msg-indicator {
+		// 	border-color: #fff transparent transparent transparent;
+		// }
+
+	}
+}
+
+.msg-new {
+	// background-color: #fff;
+
+	.msg-card-head {
+		background-color: #cae9ff;
+	}
+
+	.msg-indicator {
+		// position: absolute;
+		// top: 0;
+		// left: 0;
+		// width: 0;
+		// height: 0;
+		// border-style: solid;
+		// border-width: 10px 10px 0 0;
+		// border-color: #4070ff transparent transparent transparent;
+
+		// margin-top: -4px;
+		// margin-left: -8px;
+	}
+}
+
+.msg-card-head {
+	position: relative;
+	height: 52px;
+	padding: 4px 8px;
+	display: inline-block;
+	border-right: 1px solid #ddd;
+	float: left;
+
+	& > .msg-card--row {
+		text-align: center;
+	}
+	
+	.msg-card--row {
+		margin-top: 10px;
+	}
+
+}
+
+
+
+
+.msg-card-content {
+	padding: 4px 8px;
+	display: block;
+
+	margin-left: 36px;
+
+	
+	[class^="label"] {
+		display: inline-block;
+	}
+}
+
+.msg-card--row {
+	height: 20px;
+
+	&:not(:last-child) {
+		margin-bottom: 4px;
+	}
+}
+
+.msg-item {
+	position: relative;
+	padding: 25px;
+	margin-top: 12.5px;
+	margin-bottom: 12.5px;
+	background-color: #fff;
+	// border: 1px solid #eee;
+	border-radius: 2px;
+	box-shadow: 0px 2px 8px -4px rgba(0,0,0,0.75);
+
+	& > .row {
+		margin: 0;
+	}
+}
+
+// .msg-item--head {
+// 	background-color: #4070ff;
+// 	height: 25px;
+// 	margin-left: -25px;
+// 	margin-right: -25px;
+// 	margin-top: -25px;
+// 	margin-bottom: 25px;
+// 	box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.75);
+// }
+
+.msg-address-list {
+	display: inline-block;
+	list-style: none;
+
+	li {
+		display: inline;
+		margin-right: 8px;
+	}
+}
+
